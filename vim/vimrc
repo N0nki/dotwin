@@ -1,0 +1,11 @@
+augroup MyAutoCmd
+  autocmd!
+augroup ENDS
+
+if &compatible
+  set nocompatible
+endif
+
+runtime! options.rc.vim
+runtime! keymap.rc.vim
+
