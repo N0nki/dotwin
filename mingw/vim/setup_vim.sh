@@ -21,4 +21,4 @@ mkdir dein
 cd dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
-sh ~/dotfiles/vim/synbolic_links.sh
+sh ~/dotwin/mingw/vim/synbolic_links.sh
