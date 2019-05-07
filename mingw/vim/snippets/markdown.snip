@@ -1,0 +1,104 @@
+snippet report
+abbr report templete
+options word
+    <div style="text-align: right;">
+    H${1}年${2}月${3}日
+    </div>
+
+    <div style="text-align: center;">
+    <h1>${4}</h1>
+    </div>
+
+    <div style="text-align: right;">
+    学籍番号 ${5}<br>
+    氏名 ${6}
+    </div>
+
+    <br>${7}
+
+snippet pagebreaktag
+abbr <div style="page-break-before: always;"></div>
+options word
+    <div style="page-break-before: always;"></div>
+
+snippet imagetag
+abbr <img src="" alt="" title="" width="" height="" />
+options word
+    <img src="${1}" alt="${2}" title="${3}" width="${4}" height="${5}" />${6}
+
+snippet positiontag
+abbr <div style="text-align:;">
+options word
+    <div style="text-align: ${1};">
+    ${2}
+    </div>${3}
+
+snippet table2
+abbr table size 2
+options word
+    |${1}|${2}|
+    |:---:|:----:|
+    |${3}|${4}|
+
+snippet table3
+abbr table size 3
+options word
+    |${1}|${2}|${3}|
+    |:---:|:----:|:---:|
+    |${4}|${5}|${6}|
+
+snippet table4
+abbr table size 4
+options word
+    |${1}|${2}|${3}|${4}|
+    |:---:|:----:|:---:|:---:|
+    |${5}|${6}|${7}|${8}|
+
+snippet checkbox
+abbr GFM checkbox
+options word
+    * [ ] ${1}
+
+snippet marpfooter
+abbr <!-- footer: -->
+options word
+    <!-- footer: ${1} -->
+
+snippet marpgaia
+abbr <!-- $theme: gaia -->
+options word
+    <!-- $theme: gaia -->
+
+snippet marpnumber
+abbr <!-- page_number: true -->
+options word
+    <!-- page_number: true -->
+
+snippet gitbookcodeblock
+abbr gitbook named codeblock
+options word
+    {% code-tabs %}
+    {% code-tabs-item title="${1}" %}
+    \`\`\`${2}
+    ${3}
+    \`\`\`
+    {% endcode-tabs-item %}
+    {% endcode-tabs %}
+
+snippet gitbooktab
+abbr gitbook tab page
+options word
+    {% tabs %}
+    {% tab title="${1}" %}
+    ${2}
+    {% endtab %}
+
+    {% tab title="${3}" %}
+    ${4}
+    {% endtab %}
+    {% endtabs %}
+
+snippet gitbookurl
+abbr gitbook embeded url
+options word
+    {% embed url="${1}" %}

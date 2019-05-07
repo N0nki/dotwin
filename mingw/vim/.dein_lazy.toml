@@ -1,0 +1,93 @@
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+depends = ['neosnippet-snippets']
+on_i = 1 on_ft = ['snippet']
+hook_add = '''
+source ~/.config/nvim/plugins/neosnippet.rc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+on_path = '.*'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+hook_add = '''
+source ~/.config/nvim/plugins/deoplete.rc.vim
+'''
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-go'
+build = 'make'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-clang'
+on_ft = ['c', 'c11', 'cpp']
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+depends = 'neomru.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/unite.rc.vim
+'''
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+on_i = 1
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+on_i = 1
+
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-go.rc.vim
+'''
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = 'markdown'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-markdown.rc.vim
+'''
+
+[[plugins]]
+repo = 'mzlogin/vim-markdown-toc'
+on_ft = 'markdown'
+
+[[plugins]]
+repo = 'Valloric/MatchTagAlways'
+on_ft = 'html'
+
+[[plugins]]
+repo = 'lervag/vimtex'
+on_ft = 'tex'
+hook_add = '''
+source ~/.config/nvim/plugins/vimtex.rc.vim
+'''
